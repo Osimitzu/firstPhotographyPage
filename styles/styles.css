@@ -7,3 +7,32 @@
 body {
     background-color: rgb(70, 71, 71);
 }
+
+body::-webkit-scrollbar {
+    width: 7px;
+    background-color: #1694cf;
+    border-radius: 20px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #f12495;
+    border-radius: 20px;
+}
+body::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(5, 196, 53);
+}
+
+/*Pantallas Celular*/
+@media only screen and ( min-width: 300px) {
+
+}
+
+/*Pantallas Tablet*/
+@media only screen and ( min-width: 768px) {
+    
+}
+
+/*Pantallas Computadora*/
+@media only screen and ( min-width: 1024px) {
+    
+}
