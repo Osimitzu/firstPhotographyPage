@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +7,9 @@
 }
 
 body {
-    background-color: rgb(253, 253, 253);
+    background-color: #FBFFE2;
+    font-family: 'Kalam', cursive;
+    color: black;
 }
 
 body::-webkit-scrollbar {
@@ -31,50 +35,94 @@ body::-webkit-scrollbar-thumb:hover {
 
 
     footer {
-        height: 100%;
-        background-color: aqua;
+        height: 85px;
+        background-color: rgba(0, 255, 255, 0);
+    }
+
+    footer>ul {
+        background-color: rgba(5, 196, 53, 0);
         display: grid;
-        grid-template-columns: repeat(3 1fr);
-        gap: 2px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        justify-content: center;
-        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        list-style: none;
+        text-align: center;
     }
 
-    footer>div {
-        background-color: rgb(238, 20, 20);
+    footer>ul>li>a>img {
         width: 50%;
-    }
-
-    footer>div>a {
-        background-color: blue;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    footer>div>a>img {
-        width: 50%;
-        background-color: peru;
+        background-color: rgba(128, 0, 128, 0);
     }
 
 }
+
+
+
 
 /*Pantallas Tablet*/
 @media only screen and ( min-width: 768px) {
     
 }
 
+
+
+
 /*Pantallas Computadora*/
 @media only screen and ( min-width: 1024px) {
+
+    header {
+        background-color: rgba(0, 255, 255, 0);
+        height: 345px;
+    }
+
+    header>nav {
+        background-color: rgba(137, 43, 226, 0);
+        display: grid;
+        grid-template-rows: 1fr 1fr; 
+        gap: 10px;
+        height: 345px;
+    }
+
+    header>nav>div {
+        /*background-color: cadetblue;*/
+        display: flex;
+        justify-self: center;   
+        margin-top: 1rem;
+        width: max-content;
+    }
+
+    header>nav>div>a>img {
+        width: 400px;
+        border-radius: 15%;
+    }
+
+    header>nav>ul {
+        /*background-color: brown;*/
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        height: max-content;
+    }
+
+    header>nav>ul>li {
+        /*background-color: rgb(255, 127, 80);*/
+        list-style: none;
+        height: max-content;
+        font-size: x-large;
+    }
+
+    header>nav>ul>li>a {
+        text-decoration: none;
+        color: black;
+    }
+
+
     
 
 
 
 
-    footer>div>a>img {
-        width: 10%;
+    footer>ul>li>a>img {
+        width: 15%;
     }
 }
